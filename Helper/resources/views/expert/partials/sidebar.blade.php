@@ -56,6 +56,12 @@
                     <span class="nav-text">COMMENTS </span>
                 </a>
             </li>
+            <li>
+						<a class="nav-link" href="/logout_e" aria-expanded="false">
+							<i class="fas fa-sign-out-alt"></i>
+							<span class="nav-text">Logout</span>
+						</a>
+					</li>
         </ul>
     </div>
 </div>

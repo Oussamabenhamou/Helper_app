@@ -118,7 +118,7 @@
                     <li>
                         <div class="timeline-panel">
                             <div class="media me-2">
-                                <img alt="image" width="50" src="{{ $comment->client->nom }} "> <!-- Modify or use dynamic source if needed -->
+                                <img alt="image" width="50" src="{{ asset('client/img/'.$comment->client->image )}}" > <!-- Modify or use dynamic source if needed -->
                             </div>
                             <div class="media-body">
                             <h4 class="mb-1" style="color: #4285F4;" >{{ $comment->client->nom }} {{ $comment->client->prenom}}</h4> <!-- Assuming 'comment' is the field name -->
@@ -126,22 +126,7 @@
                                 <h5 class="mb-1">{{ $comment->comment }}</h5> <!-- Assuming 'comment' is the field name -->
                                 <small class="d-block">{{ $comment->date }}</small> <!-- Display date directly from database -->
                             </div>
-                            <div class="dropdown">
-                                <button type="button" class="btn btn-primary light sharp" data-bs-toggle="dropdown">
-                                    <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24"></rect>
-                                            <circle fill="#000000" cx="5" cy="12" r="2"></circle>
-                                            <circle fill="#000000" cx="12" cy="12" r="2"></circle>
-                                            <circle fill="#000000" cx="19" cy="12" r="2"></circle>
-                                        </g>
-                                    </svg>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                    <a class="dropdown-item" href="#">Edit</a>
-                                    <a class="dropdown-item" href="#">Delete</a>
-                                </div>
-                            </div>
+                            
                         </div>
                     </li>
                     @endforeach

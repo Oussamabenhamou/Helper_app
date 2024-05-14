@@ -111,7 +111,7 @@
 <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="/" class="logo d-flex align-items-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <!-- <img src="assets/img/logo.png" alt=""> -->
             <h1>Helper</h1>
@@ -121,12 +121,12 @@
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a href="/indexe" >Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="/" >Home</a></li>
 
-                <li><a href="/contact">Contact</a></li>
+
+
+
+
 
                 <li><a class="get-a-quote" href="/login">Login </a></li>
             </ul>
@@ -174,24 +174,23 @@
         <div class="container" data-aos="fade-up">
 
             <div class="row g-0">
-                <div class="col-lg-5 quote-bg" style="background-image: url(assets/img/quote-bg.jpg);"></div>
-
+                <div class="col-lg-5 quote-bg" style="background-image: url({{asset('client/img/login1.png')}});">
+                </div>
                 <div class="col-lg-7">
 
 
                     <form action="/registerclient" method="POST" class="php-email-form active" id="client-form" >
                         @csrf
                     <h3>Client</h3>
-                        <p>Join our community and start offering or receiving top-notch home services. Connect with professionals and homeowners alike.</p>
-                            @if ($errors->any())
+ @if ($errors->any())
 
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
+    <ul>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
 
-                            @endif
+@endif
 
                         <div class="row gy-4">
 
@@ -219,10 +218,20 @@
                             <div class="col-md-12">
                                 <input type="password" class="form-control" name="password" placeholder="Password" required>
                             </div>
+
+
+
+
+
                             <div class="col-md-12 text-center">
                                 <div class="loading">Loading</div>
                              <div class="error-message"></div>
-                                <div class="sent-message"> dhfze dzd cdggds sdtfstd sdsihds </div>
+
+                                <div class="sent-message">   dhfze dzd cdggds sdtfstd sdsihds </div>
+
+
+
+
                                 <button type="submit">Register</button>
                             </div>
 
@@ -270,7 +279,11 @@
         </div>
 
         <div class="col-md-12">
-            <input type="text" class="form-control" name="ville" placeholder="City" value="{{old('ville')}}" required>
+            <select class="form-control" name="ville" required>
+                <option value="">Select City</option>
+                <option value="Tangier" {{ old('ville') == 'Tangier' ? 'selected' : '' }}>Tangier</option>
+                <option value="Tetouan" {{ old('ville') == 'Tetouan' ? 'selected' : '' }}>Tetouan</option>
+            </select>
         </div>
 
         <div class="col-md-12">
@@ -330,7 +343,6 @@
     <!-- End Get a Quote Section -->
 
 </main><!-- End #main -->
-
 <!-- ======= Footer ======= -->
 <footer id="footer" class="footer">
 
@@ -340,7 +352,7 @@
                 <a href="index.html" class="logo d-flex align-items-center">
                     <span>Helper</span>
                 </a>
-                <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                <p>Providing expert solutions for your home and garden needs, including reliable delivery services.</p>
                 <div class="social-links d-flex mt-4">
                     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -352,35 +364,28 @@
             <div class="col-lg-2 col-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="/">Home</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-2 col-6 footer-links">
                 <h4>Our Services</h4>
                 <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">Product Management</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Bricolage</a></li>
+                    <li><a href="#">Gardening</a></li>
+                    <li><a href="#">Delivery</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                 <h4>Contact Us</h4>
                 <p>
-            A108 Adam Street <br>
-            Tétouan, 35022<br>
-            Maroc <br><br>
-            <strong>Phone:</strong> +212 780 456 896<br>
-            <strong>Email:</strong> Helper@gmail.com<br>
+                    ENSATE <br>
+                    Tétouan, 35022<br>
+                    Morocco <br><br>
+                    <strong>Phone:</strong> +212 780 456 896<br>
+                    <strong>Email:</strong> contact@helper.com<br>
                 </p>
-
             </div>
 
         </div>
@@ -388,13 +393,9 @@
 
     <div class="container mt-4">
         <div class="copyright">
-            &copy; Copyright <strong><span>Helper</span></strong>. All Rights Reserved
+            <strong><span>Helper</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
     </div>

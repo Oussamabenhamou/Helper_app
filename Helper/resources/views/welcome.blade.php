@@ -44,7 +44,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="/index" class="logo d-flex align-items-center">
+      <a href = "/" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Helper</h1>
@@ -55,11 +55,9 @@
       <nav id="navbar" class="navbar">
         <ul>
         <li><a href="/index" class="active" >Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/services">Services</a></li>
-                <!-- <li><a href="/pricing">Pricing</a></li> -->
 
-                <li><a href="/contact">Contact</a></li>
+
+            <li><a class="get-a-quote" href="/login">Login </a></li>
 
                 <li><a class="get-a-quote" href="/register">Register </a></li>
         </ul>
@@ -82,37 +80,38 @@
             <button type="submit" class="btn btn-primary">Search</button>
           </form>
 
-         <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
 
-          <div class="col-lg-3 col-6">
-            <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="{{ $clientCount }}" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Clients</p>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-3 col-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="{{ $demandCount }}" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Reservations</p>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-3 col-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="{{ $expertCount }}" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Experts</p>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-3 col-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Services</p>
-                </div>
-              </div><!-- End Stats Item -->
-
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="{{ $clientCount }}" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Clients</p>
               </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="{{ $demandCount }}" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Reservations</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="{{ $expertCount }}" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Experts</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Services</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+          </div>
+        </div>
 
         <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
           <img src="{{ asset('accueil/Helper/assets/img/hero-img.svg') }}" class="img-fluid mb-3 mb-lg-0" alt="">
@@ -124,56 +123,43 @@
 
   <main id="main">
 
-    <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
-      <div class="container">
+      <!-- ======= Featured Services Section ======= -->
+      <section id="featured-services" class="featured-services">
+          <div class="container">
 
-        <div class="row gy-4">
+              <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
-            <div>
-              <h4 class="title">Range of Services</h4>
-              <p class="description">Helper offers a wide range of home services, including housekeeping, cooking, childcare, handyman services, moving assistance, healthcare services, and more.</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
+                  <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+                      <div class="icon flex-shrink-0"><i class="fa-solid fa-wrench"></i></div>
+                      <div>
+                          <h4 class="title">Professional Bricolage Services</h4>
+                          <p class="description">From minor repairs to major home renovations, our skilled handymen are equipped to handle all your bricolage needs efficiently and with high-quality results.</p>
+                          <a href="/login" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                  </div><!-- End Service Item -->
+
+                  <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                      <div class="icon flex-shrink-0"><i class="fa-solid fa-seedling"></i></div>
+                      <div>
+                          <h4 class="title">Expert Gardening Solutions</h4>
+                          <p class="description">Our gardening services offer everything from routine maintenance to complete garden makeovers, ensuring your green space is always at its best.</p>
+                          <a href="/login" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                  </div><!-- End Service Item -->
+
+                  <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                      <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
+                      <div>
+                          <h4 class="title">Reliable Delivery Services</h4>
+                          <p class="description">Whether it's parcel delivery or large-scale moving services, our reliable and timely delivery solutions ensure your items reach their destination safely.</p>
+                          <a href="/login" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                  </div><!-- End Service Item -->
+
+              </div>
           </div>
-
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
-            <div>
-              <h4 class="title">Quality and Expertise</h4>
-              <p class="description">We partner with skilled professionals who undergo rigorous selection processes to ensure the highest standards of quality and expertise in their respective fields.</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
-            <div>
-              <h4 class="title">Commitment to Customer Satisfaction</h4>
-              <p class="description">At Helper, customer satisfaction is our top priority. We are committed to delivering exceptional service and providing timely solutions to our clients' needs.</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          </div>
-        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-          <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
-          <div>
-            <h4 class="title">Safety and Privacy Guarantee</h4>
-            <p class="description">Helper takes the security and privacy of our clients' information seriously. We implement robust measures to safeguard personal data and ensure secure transactions.
-
-              .</p>
-            <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div><!-- End Service Item -->
-
-      </div>
-      </div>
-    </section><!-- End Featured Services Section -->
+      </section><!-- End Featured Services Section -->
+      <!-- End Featured Services Section -->
 
     <!-- ======= About Us Section ======= -->
     <!-- ======= About Us Section ======= -->
@@ -216,256 +202,248 @@
 
 
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+          <div class="container">
 
-        <div class="slides-1 swiper" data-aos="fade-up">
-          <div class="swiper-wrapper">
+              <div class="slides-1 swiper" data-aos="fade-up">
+                  <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{{ asset('accueil/Helper/assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+                      <div class="swiper-slide">
+                          <div class="testimonial-item">
+                              <img src="{{ asset('accueil/Helper/assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
+                              <h3>Amelia Banks</h3>
+                              <h4>Garden Enthusiast</h4>
+                              <div class="stars">
+                                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                              </div>
+                              <p>
+                                  <i class="bi bi-quote quote-icon-left"></i>
+                                  The team transformed our backyard into a beautiful garden oasis. The attention to detail and the passion for their work were evident. I highly recommend their gardening services to anyone looking to enhance their outdoor space!
+                                  <i class="bi bi-quote quote-icon-right"></i>
+                              </p>
+                          </div>
+                      </div><!-- End testimonial item -->
+
+                      <div class="swiper-slide">
+                          <div class="testimonial-item">
+                              <img src="{{ asset('accueil/Helper/assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
+                              <h3>Lucas Martin</h3>
+                              <h4>Homeowner</h4>
+                              <div class="stars">
+                                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                              </div>
+                              <p>
+                                  <i class="bi bi-quote quote-icon-left"></i>
+                                  I used their bricolage services to fix multiple issues around my house, including plumbing and carpentry. The expert was punctual, professional, and very skilled. Everything was done perfectly on the first visit.
+                                  <i class="bi bi-quote quote-icon-right"></i>
+                              </p>
+                          </div>
+                      </div><!-- End testimonial item -->
+
+                      <div class="swiper-slide">
+                          <div class="testimonial-item">
+                              <img src="{{ asset('accueil/Helper/assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
+                              <h3>Sophia Clark</h3>
+                              <h4>Business Owner</h4>
+                              <div class="stars">
+                                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                              </div>
+                              <p>
+                                  <i class="bi bi-quote quote-icon-left"></i>
+                                  Our business regularly requires urgent delivery services and this platform has never let us down. Timely, reliable, and with excellent communication throughout the process. They truly understand the meaning of urgent!
+                                  <i class="bi bi-quote quote-icon-right"></i>
+                              </p>
+                          </div>
+                      </div><!-- End testimonial item -->
+
+                      <div class="swiper-slide">
+                          <div class="testimonial-item">
+                              <img src="{{ asset('accueil/Helper/assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
+                              <h3>Ethan Jones</h3>
+                              <h4>Interior Designer</h4>
+                              <div class="stars">
+                                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                              </div>
+                              <p>
+                                  <i class="bi bi-quote quote-icon-left"></i>
+                                  I regularly collaborate with experts from this platform for renovations. Their innovative approach and commitment to quality have greatly contributed to the success of my projects.
+                                  <i class="bi bi-quote quote-icon-right"></i>
+                              </p>
+                          </div>
+                      </div><!-- End testimonial item -->
+
+                      <div class="swiper-slide">
+                          <div class="testimonial-item">
+                              <img src="{{ asset('accueil/Helper/assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
+                              <h3>Grace Lee</h3>
+                              <h4>Freelancer</h4>
+                              <div class="stars">
+                                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                              </div>
+                              <p>
+                                  <i class="bi bi-quote quote-icon-left"></i>
+                                  The ease and convenience of booking a delivery service through this website have made it my go-to solution for sending packages. The detailed tracking and timely updates are just fantastic!
+                                  <i class="bi bi-quote quote-icon-right"></i>
+                              </p>
+                          </div>
+                      </div><!-- End testimonial item -->
+
+                  </div>
+                  <div class="swiper-pagination"></div>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{{ asset('accueil/Helper/assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{{ asset('accueil/Helper/assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{{ asset('accueil/Helper/assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{{ asset('accueil/Helper/assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
 
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
+      </section><!-- End Testimonials Section -->
 
-      </div>
-    </section><!-- End Testimonials Section -->
+      <!-- ======= Frequently Asked Questions Section ======= -->
+      <section id="faq" class="faq">
+          <div class="container" data-aos="fade-up">
+              <div class="section-header">
+                  <span>Frequently Asked Questions</span>
+                  <h2>Frequently Asked Questions</h2>
+              </div>
+              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                  <div class="col-lg-10">
+                      <div class="accordion accordion-flush" id="faqlist">
+                          <div class="accordion-item">
+                              <h3 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                                      <i class="bi bi-question-circle question-icon"></i>
+                                      How do I book a service on your website?
+                                  </button>
+                              </h3>
+                              <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                  <div class="accordion-body">
+                                      To book a service, simply select the category you need help with (bricolage, gardening, or delivery), choose the specific service, and fill out the service request form. Once submitted, an expert will be in touch to confirm details and schedule the service.
+                                  </div>
+                              </div>
+                          </div><!-- # Faq item-->
 
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq">
-      <div class="container" data-aos="fade-up">
+                          <div class="accordion-item">
+                              <h3 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                                      <i class="bi bi-question-circle question-icon"></i>
+                                      What are your rates for delivery services?
+                                  </button>
+                              </h3>
+                              <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                  <div class="accordion-body">
+                                      Our delivery rates depend on the size and weight of the package, as well as the distance to be covered. You can get an estimated cost by using the quote tool on our website or by contacting us directly for more details.
+                                  </div>
+                              </div>
+                          </div><!-- # Faq item-->
 
-        <div class="section-header">
-          <span>Frequently Asked Questions</span>
-          <h2>Frequently Asked Questions</h2>
+                          <div class="accordion-item">
+                              <h3 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                                      <i class="bi bi-question-circle question-icon"></i>
+                                      Are your experts qualified?
+                                  </button>
+                              </h3>
+                              <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                  <div class="accordion-body">
+                                      Yes, all our experts are vetted and must meet strict qualifications. They have considerable experience and hold relevant certifications in their fields, ensuring quality and reliability in the services they provide.
+                                  </div>
+                              </div>
+                          </div><!-- # Faq item-->
 
-        </div>
+                          <div class="accordion-item">
+                              <h3 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                                      <i class="bi bi-question-circle question-icon"></i>
+                                      What if I am not satisfied with the service?
+                                  </button>
+                              </h3>
+                              <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                  <div class="accordion-body">
+                                      If you are not satisfied with the service, please contact us within 24 hours of the service completion. We offer a satisfaction guarantee and will work to resolve your issue, whether that means a refund or re-scheduling another expert to ensure your satisfaction.
+                                  </div>
+                              </div>
+                          </div><!-- # Faq item-->
 
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-10">
+                          <div class="accordion-item">
+                              <h3 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                                      <i class="bi bi-question-circle question-icon"></i>
+                                      How do I cancel a booked service?
+                                  </button>
+                              </h3>
+                              <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                  <div class="accordion-body">
+                                      To cancel a booked service, please contact our support team or use the cancellation link provided in your service confirmation email. Please note that cancellations must be made at least 24 hours before the scheduled service time to avoid a cancellation fee.
+                                  </div>
+                              </div>
+                          </div><!-- # Faq item-->
 
-            <div class="accordion accordion-flush" id="faqlist">
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Question?
-                  </button>
-                </h3>
-                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                      </div>
                   </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Question?                  </button>
-                </h3>
-                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Question?                  </button>
-                </h3>
-                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Question?                  </button>
-                </h3>
-                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
-                    <i class="bi bi-question-circle question-icon"></i>
-                    Question?                  </button>
-                </h3>
-                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-            </div>
-
+              </div>
           </div>
-        </div>
-
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
+      </section>
+      <!-- End Frequently Asked Questions Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>Helper</span>
-          </a>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <div class="container">
+          <div class="row gy-4">
+              <div class="col-lg-5 col-md-12 footer-info">
+                  <a href="index.html" class="logo d-flex align-items-center">
+                      <span>Helper</span>
+                  </a>
+                  <p>Providing expert solutions for your home and garden needs, including reliable delivery services.</p>
+                  <div class="social-links d-flex mt-4">
+                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                  </div>
+              </div>
+
+              <div class="col-lg-2 col-6 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                      <li><a href="/">Home</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-2 col-6 footer-links">
+                  <h4>Our Services</h4>
+                  <ul>
+                      <li><a href="#">Bricolage</a></li>
+                      <li><a href="#">Gardening</a></li>
+                      <li><a href="#">Delivery</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                  <h4>Contact Us</h4>
+                  <p>
+                      ENSATE <br>
+                      Tétouan, 35022<br>
+                      Morocco <br><br>
+                      <strong>Phone:</strong> +212 780 456 896<br>
+                      <strong>Email:</strong> contact@helper.com<br>
+                  </p>
+              </div>
+
           </div>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="/index">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>
-            A108 Adam Street <br>
-            Tétouan, 35022<br>
-            Maroc <br><br>
-            <strong>Phone:</strong> +212 780 456 896<br>
-            <strong>Email:</strong> Helper@gmail.com<br>
-          </p>
-
-        </div>
-
       </div>
-    </div>
 
-    <div class="container mt-4">
-      <div class="copyright">
-        <strong><span>Helper</span></strong>. All Rights Reserved
+      <div class="container mt-4">
+          <div class="copyright">
+              <strong><span>Helper</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
       </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
 
   </footer><!-- End Footer -->
-  <!-- End Footer -->
+
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

@@ -112,7 +112,7 @@
         <div class="col-md-8 col-lg-8 col-xl-8 col-xxl-10">
             <div class="card border-0 pb-0">
         <div class="card-header border-0 pb-0">
-            <h4 class="card-title">Notifications 2</h4>
+            <h4 class="card-title"></h4>
         </div>
         <div class="card-body">
 
@@ -123,10 +123,10 @@
     <div class="col-md-8 col-lg-8 col-xl-8 col-xxl-10">
         <div class="card border-0 pb-0">
             <div class="card-header border-0 pb-0">
-                <h4 class="card-title">VOS SERVICES</h4>
+               
             </div>
             <div class="card-body">
-                <h2>Your Services</h2>
+                <h2 style="text-align: center;">Your Services</h2>
                 <div class="list-group">
                 @foreach($userServices as $service)
     <div class="list-group-item">
@@ -187,7 +187,7 @@
                 </form>
                 @else
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Attention!</strong> Vérifiez vos entrées.
+  <strong>Attention !</strong> you have reached the limit of services provided.
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>

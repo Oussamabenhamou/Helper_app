@@ -191,3 +191,4 @@ Route::get('/clientprofile' , [ClientProfileController::class, 'showProfile']
 Route::get('/fetch-interventions-without-comment', [ClientController::class, 'fetchInterventionsWithoutComment']);
 Route::get('/clientComments', [ClientController::class, 'getcomment'] );
 Route::get('/logoutC', [ClientController::class, 'logout'] );
+Route::get('/logout_e', [ClientController::class, 'logout_e'] );

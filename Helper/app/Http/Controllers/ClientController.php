@@ -286,5 +286,9 @@ class ClientController extends Controller
         session()->forget('client');
         return redirect('/');
     }
+    public function logout_e(){
+        session()->forget('expert');
+        return redirect('/');
+    }
   
 }

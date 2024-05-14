@@ -54,12 +54,12 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-        <li><a href="/indexe" >Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/" >Home</a></li>
 
-                <li><a href="/contact">Contact</a></li>
+
+
+
+
 
                 <li><a class="get-a-quote" href="/register">Register </a></li>
         </ul>
@@ -85,7 +85,7 @@
       <nav>
         <div class="container">
           <ol>
-            <li><a href="/index">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li>Login</li>
           </ol>
         </div>
@@ -97,8 +97,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row g-0">
-
-          <div class="col-lg-5 quote-bg" style="background-image: url(assets/img/quote-bg.jpg);"></div>
+          <div class="col-lg-5 quote-bg" style="background-image: url({{asset('client/img/login1.png')}});">
+          </div>
 
           <div class="col-lg-7">
             <form action="/con" method="POST" class="php-email-form">
@@ -120,7 +120,7 @@
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="password" placeholder="Password"  required>
+                  <input type="password" class="form-control" name="password" placeholder="Password" required>
                 </div>
 
 
@@ -129,13 +129,12 @@
 
                   <button type="submit" name="btn-sbt">login</button>
 
+                    <p class="mt-3">Not registered yet? <a href="/register">Register here</a></p>
 
                  <!-- <li><a href="register.html">Home</a></li>  -->
 
                 </div>
-                <div class="col-md-12">
-                  <p>Don't have an account? <a href="/register">Register</a></p>
-                </div>
+
 
               </div>
             </form>
@@ -151,73 +150,61 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>Helper</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <div class="container">
+          <div class="row gy-4">
+              <div class="col-lg-5 col-md-12 footer-info">
+                  <a href="index.html" class="logo d-flex align-items-center">
+                      <span>Helper</span>
+                  </a>
+                  <p>Providing expert solutions for your home and garden needs, including reliable delivery services.</p>
+                  <div class="social-links d-flex mt-4">
+                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                  </div>
+              </div>
+
+              <div class="col-lg-2 col-6 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                      <li><a href="/">Home</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-2 col-6 footer-links">
+                  <h4>Our Services</h4>
+                  <ul>
+                      <li><a href="#">Bricolage</a></li>
+                      <li><a href="#">Gardening</a></li>
+                      <li><a href="#">Delivery</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                  <h4>Contact Us</h4>
+                  <p>
+                      ENSATE <br>
+                      Tétouan, 35022<br>
+                      Morocco <br><br>
+                      <strong>Phone:</strong> +212 780 456 896<br>
+                      <strong>Email:</strong> contact@helper.com<br>
+                  </p>
+              </div>
+
           </div>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>
-          A108 Adam Street <br>
-            Tétouan, 35022<br>
-            Maroc <br><br>
-            <strong>Phone:</strong> +212 780 456 896<br>
-            <strong>Email:</strong> Helper@gmail.com<br>
-          </p>
-
-        </div>
-
       </div>
-    </div>
 
-    <div class="container mt-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Helper</span></strong>. All Rights Reserved
+      <div class="container mt-4">
+          <div class="copyright">
+              <strong><span>Helper</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
 
   </footer><!-- End Footer -->
-  <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
